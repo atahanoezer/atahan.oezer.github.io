@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://atahanoezer.github.io/sitemap.xml
