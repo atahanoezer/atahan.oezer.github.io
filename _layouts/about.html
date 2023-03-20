@@ -46,11 +46,18 @@ layout: default
             {%- include news.html %}
           {%- endif %}
 
+          
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
+
+          {% if page.repositories -%}
+            <h2><a href="{{ '/repositories/' | relative_url }}" style="color: inherit;">Repositories</a></h2>
+            {%- include repository/repo.html %}
+          {%- endif %}
+          
 
           <!-- Social -->
           {%- if page.social %}
